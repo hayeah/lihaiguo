@@ -1,0 +1,15 @@
+# The address to bind API server
+addr: 0.0.0.0:8888
+
+# The path of geolite country database
+maxmind: GeoLite2-Country.mmdb
+
+# API nodes for specified country codes. Return nodes in "default" if not specified.
+nodes:
+  cn:
+    - 123.123.123.1:4442
+    - 123.123.123.2:4442
+
+  default:
+    - 223.123.123.1:4442
+    - 223.123.123.2:4442
